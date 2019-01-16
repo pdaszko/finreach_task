@@ -4,8 +4,9 @@ import static com.codeborne.selenide.Selenide.*
 
 class BasePage {
 
-        static void navigate() {
+        LogInPage navigate() {
             open("https://cafetownsend-angular-rails.herokuapp.com")
+        new LogInPage()
         }
 
 }
