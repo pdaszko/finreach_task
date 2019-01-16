@@ -1,1 +1,4 @@
-/.ide
+.idea/
+out/
+target/
+build/

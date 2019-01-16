@@ -6,11 +6,11 @@ import org.testng.annotations.Test
 class LoginPageTest {
 
     @Test
-    logInTest(){
-        BasePage.navigate()
+    void logInTest(){
+        new BasePage()
+                .navigate()
                 .setLogin("Luke")
                 .setPassword("Skywalker")
-
     }
 
 }

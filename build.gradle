@@ -30,12 +30,17 @@ allure {
     clean = true
 }
 
+configurations {
+    agent
+}
+
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
     compile group: 'org.testng', name: 'testng', version: '6.11'
     compile "ru.yandex.qatools.allure:allure-testng-adaptor:1.5.4"
     compile "com.codeborne:selenide:5.1.0"
     compile 'org.slf4j:slf4j-nop:1.7.21'
+    agent "org.aspectj:aspectjweaver:1.8.10"
 }
 
 tasks.withType(Test).all { testTask ->
