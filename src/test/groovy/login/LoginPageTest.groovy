@@ -7,7 +7,7 @@ class LoginPageTest {
 
     @Test
     logInTest(){
-        BasePage.navigate("https://cafetownsend-angular-rails.herokuapp.com")
+        BasePage.navigate()
                 .setLogin("Luke")
                 .setPassword("Skywalker")
 
